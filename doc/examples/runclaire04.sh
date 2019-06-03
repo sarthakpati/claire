@@ -23,9 +23,17 @@ mpirun -np 20 $bindir/claire -mr $datdir/brain01.nii.gz -mt $datdir/brain02.nii.
 # > $bindir/claire --- name of the binary 
 # > -mr <file>     --- reference image (fixed image)
 # > -mt <file>     --- template image (image to be registered) 
-# > -train binary  --- use binary search with default bound to 
+# > -train binary  --- 'binary' search with default bound to 
 #                      identify an adequate regularization 
 #                      parameter (see output of solver) 
+#                      'reduce' method does coarser registration but isn't as robust
+# > -jbound val    --- bounds are [val,1/val]
+
+## output flags
+# > -velocity      --- this flags generates the velocity field
+# > -deftemplate   --- this will give the final registered image
+# > -detdefgrad    --- this will save the jacobians
+# > -x /outPath/s1_--- this will write all the output files at '/outPath/' with the prefix 's1_'
 
 
 

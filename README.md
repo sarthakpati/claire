@@ -25,5 +25,12 @@ If you plan on using CLAIRE in your research please cite the following manuscrip
 
 The links above point to individual markdown files. These files can be found in the [doc](https://github.com/andreasmang/claire/tree/master/doc) subfolder. Basic examples for how to execute CLAIRE can be found in the [doc/examples](https://github.com/andreasmang/claire/tree/master/doc/examples) folder.
 
+## Runtime Requirements
+* Images need to be padded by at least a single voxel all around the image (this to ensure that the images are "periodic")
+  * The size of the padded border needs to be larger than the size of the smoothing kernel.
+  * The smoothing can be disabled if the smoothing happens as part of the preprocessing of the input images.
+  * For typical skull-stripped images at CBICA, a linear smoothing is needed (or use whatever CLAIRE does by default) since CBICA uses non-linear smoothing.
+  * Typical smoothing kernel should be 2x2x2 (current default is 1x1x1).
+
 ## License
 Read the [LICENSE](https://github.com/andreasmang/claire/tree/master/LICENSE) file for more details.

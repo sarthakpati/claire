@@ -18,9 +18,9 @@
 
 ## Requirements <a name="requirements"></a>
 
-* MPI (Open MPI; MVAPICH; Intel MPI); required by `AccFFT`, `PETSc`, and `CLAIRE`
+* MPI (Open MPI; MVAPICH; Intel MPI); required by `AccFFT`, `PETSc` (Naveen has tested against **3.9.1**), and `CLAIRE`
 * cmake ([https://cmake.org](https://cmake.org)); required by `AccFFT` and `niftilib`
-* python ([https://www.python.org](https://www.python.org)); version 2.7; required by `PETSc`
+* python ([https://www.python.org](https://www.python.org)); version 2.7; required by `PETSc`; required for installation only and not for runtime
 
 
 Make sure that the standard *wrappers* for `mpicc` and `mpicxx` are available on your system (either by loading the appropriate modules and/or by setting up the appropriate `PATH` and `LD_LIBRARY_PATH` definitions below). The compilation has been tested with `Open MPI`, `MVAPICH`, and `Intel MPI`.

@@ -31,6 +31,8 @@ The links above point to individual markdown files. These files can be found in 
   * The smoothing can be disabled if the smoothing happens as part of the preprocessing of the input images.
   * For typical skull-stripped images at CBICA, a linear smoothing is needed (or use whatever CLAIRE does by default) since CBICA uses non-linear smoothing.
   * Typical smoothing kernel should be 2x2x2 (current default is 1x1x1).
+* Input image(s) should **always** be affine-ly registered with each other. CLAIRE assumes registration done to T1, not T1Gd as with CBICA.
+* Typical runtime commands are highlighted in [Examples](doc/README-RUNME.md)
 
 ## License
 Read the [LICENSE](https://github.com/andreasmang/claire/tree/master/LICENSE) file for more details.

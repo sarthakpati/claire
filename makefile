@@ -1,8 +1,8 @@
 CXX=mpicxx
-USEINTEL=no
-USEINTELMPI=no
+USEINTEL=yes # need to load intel-ps module
+USEINTELMPI=yes  # need to load intel-ps module and check if it is there
 USESINGLE=no
-USEPNETCDF=yes
+USEPNETCDF=no
 USENIFTI=yes
 USEHASWELL=no
 BUILDTOOLS=yes

@@ -1,6 +1,6 @@
 CXX=mpicxx
 USEINTEL=yes # need to load intel-ps module
-USEINTELMPI=yes  # need to load intel-ps module and check if it is there - doing a 'which mpicxx' will give this information
+USEINTELMPI=yes  # need to load intel-ps module and check if it is there - doing a 'which mpicxx' should point to a path in the intel installation directory
 USESINGLE=no
 USEPNETCDF=no
 USENIFTI=yes
